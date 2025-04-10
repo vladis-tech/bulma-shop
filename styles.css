@@ -1,0 +1,115 @@
+/* Main Styles for BulmaShop */
+
+/* Hero Section */
+.hero-background {
+  background-color: #00d1b2;
+  background-image: linear-gradient(141deg, #009e6c 0%, #00d1b2 71%, #00e7eb 100%);
+}
+
+/* Product Cards */
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-content {
+  flex-grow: 1;
+}
+
+.price {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #363636;
+}
+
+.product-image {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Footer */
+.footer {
+  margin-top: 2rem;
+}
+
+.footer ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.footer ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer ul li a {
+  color: #4a4a4a;
+  transition: color 0.2s ease;
+}
+
+.footer ul li a:hover {
+  color: #00d1b2;
+}
+
+/* Social Media Buttons */
+.buttons .button .icon {
+  transition: color 0.2s ease;
+}
+
+.buttons .button:hover .icon {
+  color: #00d1b2;
+}
+
+/* Category Boxes */
+.box {
+  transition: transform 0.3s ease;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+}
+
+/* Newsletter Section */
+.has-background-light {
+  background-color: #f5f5f5 !important;
+}
+
+/* Button Hover Effects */
+.button {
+  transition: transform 0.2s ease;
+}
+
+.button:not(.is-small):hover {
+  transform: translateY(-2px);
+}
+
+/* Mobile Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  .columns {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .column {
+    padding: 0.5rem;
+  }
+  
+  .hero-body {
+    padding: 2rem 1rem;
+  }
+  
+  .title.is-1 {
+    font-size: 2rem;
+  }
+  
+  .section {
+    padding: 2rem 1rem;
+  }
+}

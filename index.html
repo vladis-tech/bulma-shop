@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bulma Shop</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar is-light" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="#">
+        <span class="icon-text">
+          <span class="icon has-text-primary">
+            <i class="fas fa-store"></i>
+          </span>
+          <span class="has-text-weight-bold is-size-4">BulmaShop</span>
+        </span>
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasic">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasic" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item is-active">Home</a>
+        <a class="navbar-item">Products</a>
+        <a class="navbar-item">Categories</a>
+        <a class="navbar-item">About</a>
+        <a class="navbar-item">Contact</a>
+      </div>
+
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="field has-addons">
+            <div class="control">
+              <input class="input" type="text" placeholder="Search products...">
+            </div>
+            <div class="control">
+              <a class="button is-primary">
+                <span class="icon">
+                  <i class="fas fa-search"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <a class="button is-light">
+            <span class="icon">
+              <i class="fas fa-user"></i>
+            </span>
+            <span>Account</span>
+          </a>
+        </div>
+        <div class="navbar-item">
+          <a class="button is-primary">
+            <span class="icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+            <span>Cart (3)</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero is-medium hero-background">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title is-1 has-text-white">
+          Spring Collection 2025
+        </h1>
+        <h2 class="subtitle has-text-white">
+          Discover our latest arrivals with up to 40% off
+        </h2>
+        <a class="button is-white is-outlined is-large">Shop Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Categories -->
+  <section class="section">
+    <div class="container">
+      <h2 class="title is-2 has-text-centered mb-6">Featured Categories</h2>
+      
+      <div class="columns">
+        <div class="column">
+          <div class="box has-text-centered has-background-primary-light">
+            <span class="icon is-large">
+              <i class="fas fa-tshirt fa-2x"></i>
+            </span>
+            <p class="title is-4 mt-3">Clothing</p>
+            <a class="button is-primary is-light is-small">Browse</a>
+          </div>
+        </div>
+        <div class="column">
+          <div class="box has-text-centered has-background-link-light">
+            <span class="icon is-large">
+              <i class="fas fa-laptop fa-2x"></i>
+            </span>
+            <p class="title is-4 mt-3">Electronics</p>
+            <a class="button is-link is-light is-small">Browse</a>
+          </div>
+        </div>
+        <div class="column">
+          <div class="box has-text-centered has-background-warning-light">
+            <span class="icon is-large">
+              <i class="fas fa-home fa-2x"></i>
+            </span>
+            <p class="title is-4 mt-3">Home</p>
+            <a class="button is-warning is-light is-small">Browse</a>
+          </div>
+        </div>
+        <div class="column">
+          <div class="box has-text-centered has-background-danger-light">
+            <span class="icon is-large">
+              <i class="fas fa-heartbeat fa-2x"></i>
+            </span>
+            <p class="title is-4 mt-3">Health</p>
+            <a class="button is-danger is-light is-small">Browse</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="section">
+    <div class="container">
+      <h2 class="title is-2 has-text-centered mb-6">Featured Products</h2>
+      
+      <div class="columns">
+        <div class="column is-3">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image">
+                <img src="/api/placeholder/400/320" alt="Product 1" class="product-image">
+              </figure>
+            </div>
+            <div class="card-content">
+              <p class="title is-5">Wireless Earbuds</p>
+              <p class="subtitle is-6">Premium sound quality</p>
+              <div class="content">
+                <p>Noise cancelling with long battery life, perfect for music lovers and daily commuters.</p>
+                <div class="price has-text-primary">$79.99</div>
+              </div>
+            </div>
+            <footer class="card-footer">
+              <a class="card-footer-item">Details</a>
+              <a class="card-footer-item button is-primary is-light">Add to Cart</a>
+            </footer>
+          </div>
+        </div>
+        
+        <div class="column is-3">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image">
+                <img src="/api/placeholder/400/320" alt="Product 2" class="product-image">
+              </figure>
+            </div>
+            <div class="card-content">
+              <p class="title is-5">Smart Watch</p>
+              <p class="subtitle is-6">Fitness tracker included</p>
+              <div class="content">
+                <p>Track your activities, receive notifications, and manage your health data with this elegant watch.</p>
+                <div class="price has-text-primary">$149.99</div>
+              </div>
+            </div>
+            <footer class="card-footer">
+              <a class="card-footer-item">Details</a>
+              <a class="card-footer-item button is-primary is-light">Add to Cart</a>
+            </footer>
+          </div>
+        </div>
+        
+        <div class="column is-3">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image">
+                <img src="/api/placeholder/400/320" alt="Product 3" class="product-image">
+              </figure>
+            </div>
+            <div class="card-content">
+              <p class="title is-5">Portable Blender</p>
+              <p class="subtitle is-6">USB rechargeable</p>
+              <div class="content">
+                <p>Make your favorite smoothies anywhere with this powerful yet compact blender.</p>
+                <div class="price has-text-primary">$34.99</div>
+              </div>
+            </div>
+            <footer class="card-footer">
+              <a class="card-footer-item">Details</a>
+              <a class="card-footer-item button is-primary is-light">Add to Cart</a>
+            </footer>
+          </div>
+        </div>
+        
+        <div class="column is-3">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image">
+                <img src="/api/placeholder/400/320" alt="Product 4" class="product-image">
+              </figure>
+            </div>
+            <div class="card-content">
+              <p class="title is-5">Cotton Sweater</p>
+              <p class="subtitle is-6">Eco-friendly materials</p>
+              <div class="content">
+                <p>Comfortable and stylish sweater made from 100% organic cotton. Available in various colors.</p>
+                <div class="price has-text-primary">$59.99</div>
+              </div>
+            </div>
+            <footer class="card-footer">
+              <a class="card-footer-item">Details</a>
+              <a class="card-footer-item button is-primary is-light">Add to Cart</a>
+            </footer>
+          </div>
+        </div>
+      </div>
+      
+      <div class="has-text-centered mt-6">
+        <a class="button is-primary is-medium">View All Products</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section class="section has-background-light">
+    <div class="container">
+      <div class="columns is-vcentered">
+        <div class="column is-8">
+          <h2 class="title is-3">Join Our Newsletter</h2>
+          <p class="subtitle">Get the latest updates, deals and exclusive offers directly to your inbox.</p>
+        </div>
+        <div class="column is-4">
+          <div class="field has-addons">
+            <div class="control is-expanded">
+              <input class="input is-medium" type="email" placeholder="Your email address">
+            </div>
+            <div class="control">
+              <a class="button is-primary is-medium">Subscribe</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-3">
+          <h3 class="title is-4">BulmaShop</h3>
+          <p>Your one-stop destination for all your shopping needs. Quality products at affordable prices.</p>
+          <div class="buttons mt-3">
+            <a class="button is-light">
+              <span class="icon"><i class="fab fa-facebook-f"></i></span>
+            </a>
+            <a class="button is-light">
+              <span class="icon"><i class="fab fa-twitter"></i></span>
+            </a>
+            <a class="button is-light">
+              <span class="icon"><i class="fab fa-instagram"></i></span>
+            </a>
+            <a class="button is-light">
+              <span class="icon"><i class="fab fa-pinterest"></i></span>
+            </a>
+          </div>
+        </div>
+        
+        <div class="column is-3">
+          <h3 class="title is-5">Shop</h3>
+          <ul>
+            <li><a>New Arrivals</a></li>
+            <li><a>Best Sellers</a></li>
+            <li><a>Sale Items</a></li>
+            <li><a>All Categories</a></li>
+          </ul>
+        </div>
+        
+        <div class="column is-3">
+          <h3 class="title is-5">Customer Service</h3>
+          <ul>
+            <li><a>Contact Us</a></li>
+            <li><a>Shipping & Returns</a></li>
+            <li><a>FAQ</a></li>
+            <li><a>Size Guide</a></li>
+          </ul>
+        </div>
+        
+        <div class="column is-3">
+          <h3 class="title is-5">Information</h3>
+          <ul>
+            <li><a>About Us</a></li>
+            <li><a>Privacy Policy</a></li>
+            <li><a>Terms & Conditions</a></li>
+            <li><a>Store Locator</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <hr>
+      
+      <div class="columns">
+        <div class="column">
+          <p>© 2025 BulmaShop. All rights reserved.</p>
+        </div>
+        <div class="column has-text-right">
+          <div class="buttons is-right">
+            <a class="button is-small">
+              <span class="icon"><i class="fab fa-cc-visa"></i></span>
+            </a>
+            <a class="button is-small">
+              <span class="icon"><i class="fab fa-cc-mastercard"></i></span>
+            </a>
+            <a class="button is-small">
+              <span class="icon"><i class="fab fa-cc-paypal"></i></span>
+            </a>
+            <a class="button is-small">
+              <span class="icon"><i class="fab fa-cc-apple-pay"></i></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
